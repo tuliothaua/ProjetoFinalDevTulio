@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="ProjetoFinalDevTulio.domain.Test/ProjetoFinalDevTulio.domain.Test.csproj" />
   <Project Path="ProjetoFinalDevTulio.domain/ProjetoFinalDevTulio.domain.csproj" />
 </Solution>
