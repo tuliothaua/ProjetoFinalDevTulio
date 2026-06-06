@@ -22,6 +22,7 @@ public class TarefaItem : Entity
         Status = status;
         Tipo = tipo;
         DataCriacao = dataCriacao;
+        DataLimite = dataLimite;
     }
 
     //Método Fábrica, ponto de entrada para criar um objeto válido
@@ -39,10 +40,10 @@ public class TarefaItem : Entity
         if (!Enum.IsDefined(typeof(ETarefaStatus), status)) throw new Exception("STATUS_INVALIDO");
 
         long allFlags = 0;
-            foreach (ETarefaTipo t in Enum.GetValues(typeof(ETarefaTipo))) 
+        foreach (ETarefaTipo t in Enum.GetValues(typeof(ETarefaTipo)))
             allFlags |= Convert.ToInt64(t);
-            long tipoValue = Convert.ToInt64(tipo);
-        if ((tipoValue & -allFlags) != 0) throw new Exception("TIPO_INVALIDO");
+        long tipoValue = Convert.ToInt64(tipo);
+        if ((tipoValue & ~allFlags) != 0) throw new Exception("TIPO_INVALIDO");
 
         if (dataCriacao == default) throw new Exception("DATA_CRIACAO_OBRIGATORIO");
         if (dataLimite == default) throw new Exception("DATA_LIMITE_OBRIGATORIO");
