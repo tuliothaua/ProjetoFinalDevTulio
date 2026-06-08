@@ -1,4 +1,7 @@
 <Solution>
+  <Project Path="ProjetoFinalDevTulio.Application/ProjetoFinalDevTulio.Application.csproj" Id="f52cf40d-b69b-49a6-a2e8-f381c37533c8" />
   <Project Path="ProjetoFinalDevTulio.domain.Test/ProjetoFinalDevTulio.domain.Test.csproj" />
   <Project Path="ProjetoFinalDevTulio.domain/ProjetoFinalDevTulio.domain.csproj" />
+  <Project Path="ProjetoFinalDevTulio.Infrastructure.Tests/ProjetoFinalDevTulio.Infrastructure.Tests..csproj" Id="c4cc595f-243a-4575-b80f-bd5a34cd385a" />
+  <Project Path="ProjetoFinalDevTulio.Infrastructure/ProjetoFinalDevTulio.Infrastructure.csproj" Id="c2dd8c8f-ea0b-49f6-a802-988ab0f4fc45" />
 </Solution>
