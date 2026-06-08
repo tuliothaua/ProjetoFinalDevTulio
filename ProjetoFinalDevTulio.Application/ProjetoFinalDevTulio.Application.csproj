@@ -15,8 +15,4 @@
     <ProjectReference Include="..\ProjetoFinalDevTulio.Infrastructure\ProjetoFinalDevTulio.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Enums\" />
-  </ItemGroup>
-
 </Project>
